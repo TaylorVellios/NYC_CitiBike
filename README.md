@@ -127,9 +127,9 @@ With just a few plots, we have determined the following:
 * Where bike-share stations are most used, where they are most in-demand
 * Gender demographics of users and how they use bike-sharing services
 
-A possibly significant downside to this dataset provided by CitiBike is the lack of unique user ID information.</br>
+A possible downside to this dataset provided by CitiBike is the lack of unique user ID information.</br>
 From what we have discovered, CitiBike Subscribers are mostly locals who are using these bikes to get to and from subway stations and locations within a 5-6min ride.</br>
-For individual Subscribers that take up to two rides a day, up to 5 times a week for work, (despite the large number of rides taken by Subscribers), there is a chance that unique Customers outnumber unique Subscribers.</br>
+For individual Subscribers that take up to two rides a day, up to 5 times a week, (despite the large number of rides taken by Subscribers), there is a chance that unique Customers outnumber unique Subscribers.</br>
 
 We have already determined that a significant amount of Customers are recreational riders, likely from out of town.</br>
 Therefore, the percentage of Unique Users to Total Rides for Customers must certainly be closer to 1:1 compared to Subscribers.</br>
@@ -141,4 +141,4 @@ For hundreds of thousands of unique locals to subscribe to this service annually
 
 ### Without proper population and tourism data, to propose this bike-share service in a city like Des Moines, IA (with a population of ~215,000) would be high-risk.</br>
 
-Should that additional data pan out, and the service be deemed in-demand, following the example set by CitiBike in NYC would be universal.
+Should that additional data pan out, and the service be deemed in-demand, following the example set by CitiBike in NYC would be universal, albeit at a much larger scale than what most cities could accommodate and benefit from.
