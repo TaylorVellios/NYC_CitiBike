@@ -1,7 +1,21 @@
 # NYC_CitiBike
-Using Tableau to look into CitiBike usage in NYC
 
 [See the Tableau Story Here](https://public.tableau.com/shared/BXTBY244J?:display_count=n&:origin=viz_share_link)
 
+# Purpose
+To analyze CitiBike bike-share data from NYC using Python and Tableau.</br>
+By honing in on key datapoints, we can determine the operational details for expanding this service to other cities.
 
-<div class='tableauPlaceholder' id='viz1622381130206' style='position: relative'><noscript><a href='#'><img alt='NYC CitiBike ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BX&#47;BXTBY244J&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;BXTBY244J' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BX&#47;BXTBY244J&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622381130206');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1600px';vizElement.style.height='927px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+# Results
+
+*To work with interactive plots, please go to the Tableau link above*
+
+While I was asked to convert the Tripduration column to datetime, it became apparent shortly after loading the dataset into Tableau that the original values for this column would still be needed to plot relevant data.</br>
+Using Tableau's built in Calculated Field option, I was able to create a second column for Tripduration that contained the number of seconds for every trip on a CitiBike.</br>
+
+![calculated field](https://user-images.githubusercontent.com/14188580/120109073-7aa11c00-c12d-11eb-95ba-3de6b1ae3a3b.PNG)
+
+Similarly, the Gender column contained discrete values of 0, 1, 2 and relating to gender data that needed to be transformed into something more useful.</br>
+Using the documentation for the data from CitiBike, an additional Gender column was created to hold the string value of each original integer</br>
+
+![calc](https://user-images.githubusercontent.com/14188580/120109293-614c9f80-c12e-11eb-8976-da91494787d3.PNG)
