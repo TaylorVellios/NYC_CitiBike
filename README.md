@@ -34,7 +34,7 @@ The above image is a dashboard made to highlight a few key datapoints that are a
 
 As can be seen in the heatmap, there is a significant concentration of daily usage from 6a-9a and 4p-8p on weekdays, and 8a-7p on weekends.</br>
 Thursday and Friday show much more mid-day usage compared to the first three workdays in the week.</br>
-Using this data from an operational standpoint, bike maintenance/recharging/cleanup should take place when the fewest number of bikes are in service: from 1am-5am.</br>
+Using this data from an operational standpoint, bike maintenance/cleanup should take place when the fewest number of bikes are in service: from 1am-5am.</br>
 
 The geographic map shows the concentration of rides based on where they begin.</br>
 The locations that are the most red indicate the most popular locations for CitiBikes trips to be started.</br>
@@ -72,11 +72,25 @@ From this we can determine that temporary "Customer" accounts:
 
 ![4](https://user-images.githubusercontent.com/14188580/120111821-05d3df00-c139-11eb-9330-ad4d3a6000ad.PNG)
 
+Above are plots for all trip durations for the month of march (top), and all trip durations by gender.</br>
+Some key takeaways:
+* Men are much more likely to use a CitiBike for a 5-minute ride, indicating that this demographic is primarily a point-A to point-B user.
+* Women are generally point-A to point-B users but have a much flatter peak topping out at 6-minutes
+* Unknown users are nearly just as likely to ride for 10-minutes as they are to ride 25-minutes.
+
+Since we have already determined a large percentage of Unknown users are temporary riders, a concern to keep in mind is that these users are putting 2 to 5 times the wear and tear on the bikes compared to the core demographic of users.</br>
+Furthering the theory that most Unknown users are tourists, the flat curve indicates that these users have no specific destination in mind when using CitiBikes.</br>
+Since CitiBikes are currently only available in NYC, it would make sense that a majority of Unknown gender users are Customers if they are only in the area for a short time and have no need for an annual pass.
+
 ### Start Locations by Gender
 
 ![6](https://user-images.githubusercontent.com/14188580/120111829-09fffc80-c139-11eb-8f42-92010e2f919e.PNG)
 
+
+
 ![6(1)](https://user-images.githubusercontent.com/14188580/120111832-0bc9c000-c139-11eb-9c0b-11229da5497b.PNG)
+
+
 
 ### Usertype by Gender/Trip Duration by Gender/Usertype
 
