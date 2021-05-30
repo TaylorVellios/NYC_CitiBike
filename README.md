@@ -37,11 +37,11 @@ Thursday and Friday show much more mid-day usage compared to the first three wor
 Using this data from an operational standpoint, bike maintenance/cleanup should take place when the fewest number of bikes are in service: from 1am-5am.</br>
 
 The geographic map shows the concentration of rides based on where they begin.</br>
-The locations that are the most red indicate the most popular locations for CitiBikes trips to be started.</br>
-Grand Central Station is where the deepest red marker is.</br>
+The locations that are the closer to red indicate the most popular locations for CitiBikes trips to begin.</br>
 Public transportation stations and other high-foot-traffic areas such as parks are the perfect places to consider building stations in other cities.</br>
+In NYC, the deepest red marker is at the coordinates for Grand Central Station.</br>
 
-Now that we know when and where CitiBike services are wanted the most, we will look into the type of people that use these services.</br>
+Now that we know when and where CitiBike services are wanted the most, we will look into the people that use these services.</br>
 
 ### Trip Times/Days by Gender
 
@@ -117,6 +117,28 @@ Takeaways for Avg. Trip Duration by Gender/Usertype:
 * All users who paid for annual subscriptions travel almost the same distance. (Within ~100 seconds)
 * The Average Trip Duration for an Unknown gender Customer is about 3x as long as any Subscriber.
 * The Average Trip Duration for Male and Female Customers is about 2x as long as their Subscriber counterparts.
-* Whether a Customer or a Subscriber, Male rider's trips conclude sooner than either other demographic.
+* Whether a Customer or a Subscriber, the average Male rider's trips conclude sooner than either other demographic.
 
 # Summary
+
+With just a few plots, we have determined the following:
+* The peak-use hours and days for bike-share services in NYC
+* Appropriate times to schedule mechanical maintenance
+* Where bike-share stations are most used, where they are most in-demand
+* Gender demographics of users and how they use bike-sharing services
+
+A possibly significant downside to this dataset provided by CitiBike is the lack of unique user ID information.</br>
+From what we have discovered, CitiBike Subscribers are mostly locals who are using these bikes to get to and from subway stations and locations within a 5-6min ride.</br>
+For individual Subscribers that take up to two rides a day, up to 5 times a week for work, (despite the large number of rides taken by Subscribers), there is a chance that unique Customers outnumber unique Subscribers.</br>
+
+We have already determined that a significant amount of Customers are recreational riders, likely from out of town.</br>
+Therefore, the percentage of Unique Users to Total Rides for Customers must certainly be closer to 1:1 compared to Subscribers.</br>
+
+#### Why is this significant?
+
+Maintenance and trip duration aside, the population of NYC is ~8.4 million people.</br>
+For hundreds of thousands of unique locals to subscribe to this service annually, and for tourists to be able to outnumber them, this business model might not work outside of a major city with a large metropolitan area.</br>
+
+### Without proper population and tourism data, to propose this bike-share service in a city like Des Moines, IA (with a population of ~215,000) would be high-risk.</br>
+
+Should that additional data pan out, and the service be deemed in-demand, following the example set by CitiBike in NYC would be universal.
