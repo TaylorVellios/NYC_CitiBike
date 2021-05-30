@@ -86,15 +86,37 @@ Since CitiBikes are currently only available in NYC, it would make sense that a 
 
 ![6](https://user-images.githubusercontent.com/14188580/120111829-09fffc80-c139-11eb-8f42-92010e2f919e.PNG)
 
+A modification of the geographic map on the dashboard, this map shows the spread of Male and Female riders at different start locations across the city.</br>
+We have already seen that Males make up the vast majority of riders for CitiBike, but in some locations, Male and Female users are closer to an even split:
+* A few points around Central Park
+* Lower East Manhattan/Chinatown
+* Williamsburg
 
+An interesting point to make regarding this visualization is how Male-led the highest traffic stations are.</br>
 
-![6(1)](https://user-images.githubusercontent.com/14188580/120111832-0bc9c000-c139-11eb-9c0b-11229da5497b.PNG)
+![6(1)](https://user-images.githubusercontent.com/14188580/120118089-5a398780-c156-11eb-8211-32001b1dee26.PNG)
 
+For the users of Unknown gender, the image above shows where their most popular starting stations are located.</br>
+Whereas the bulk of users are using CitiBike to go from public transportation stations short distances to work, the large concentration of rides around Central Park continue to reinforce the idea that most of these users are not using the service to go to and from work, but are rather using these machines for recreation.</br>
 
+Even more surprising, if you show only Female and Unknown users, there are some stations where Female riders are outnumbered:
+* Central Park
+* New York City Hall
 
 ### Usertype by Gender/Trip Duration by Gender/Usertype
 
 ![7](https://user-images.githubusercontent.com/14188580/120111835-0cfaed00-c139-11eb-83d0-d13e74486e92.PNG)
 
+Lastly, I wanted to show a visualization of all recorded rides and trip duration for this given month split by gender and user type.</br>
+
+Takeaways for Rides by Gender/Usertype:
+* There are almost 3x as many Male subscribers as there are Women, and there are VERY few Unknown gender subscribers.
+* Like we saw coming, Unknown users are definitely the largest demographic of temporary Customers.
+
+Takeaways for Avg. Trip Duration by Gender/Usertype:
+* All users who paid for annual subscriptions travel almost the same distance. (Within ~100 seconds)
+* The Average Trip Duration for an Unknown gender Customer is about 3x as long as any Subscriber.
+* The Average Trip Duration for Male and Female Customers is about 2x as long as their Subscriber counterparts.
+* Whether a Customer or a Subscriber, Male rider's trips conclude sooner than either other demographic.
 
 # Summary
