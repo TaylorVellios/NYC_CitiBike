@@ -1,14 +1,14 @@
 # NYC_CitiBike
 
 [See the Tableau Story Here](https://public.tableau.com/shared/BXTBY244J?:display_count=n&:origin=viz_share_link)
+*To work with the interactive plots shown below, please go to the Tableau Story*
 
 # Purpose
 To analyze CitiBike bike-share data from NYC (pre-pandemic) using Python and Tableau.</br>
 By honing in on key datapoints, we can determine the operational details for expanding this service to other cities.
 
 # Preparation
-
-*To work with interactive plots, please go to the Tableau link above*
+[Data Source](https://s3.amazonaws.com/tripdata/index.html)
 
 While I was asked to convert the Tripduration column to datetime, it became apparent shortly after loading the dataset into Tableau that the original values for this column would still be needed to plot relevant data.</br>
 Using Tableau's built in Calculated Field option, I was able to create a second column for Tripduration that contained the number of seconds for every trip on a CitiBike.</br>
