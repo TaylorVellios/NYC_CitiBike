@@ -3,7 +3,7 @@
 [See the Tableau Story Here](https://public.tableau.com/shared/BXTBY244J?:display_count=n&:origin=viz_share_link)
 
 # Purpose
-To analyze CitiBike bike-share data from NYC using Python and Tableau.</br>
+To analyze CitiBike bike-share data from NYC (pre-pandemic) using Python and Tableau.</br>
 By honing in on key datapoints, we can determine the operational details for expanding this service to other cities.
 
 # Preparation
@@ -22,19 +22,63 @@ Using the documentation for the data from CitiBike, an additional Gender column 
 
 # Results
 
+### Starting Dashboard
+
 ![1](https://user-images.githubusercontent.com/14188580/120111307-05d2df80-c137-11eb-8709-22912f23b6bf.PNG)
 
+The above image is a dashboard made to highlight a few key datapoints that are answers to the most obvious questions regarding CitiBike usage.</br>
+* Total rides
+* Distinct number of bikes that were used
+* Heatmap showing the most popular days and times of day when bikes are used
+* Geographic map showing the spread of starting locations for rides
+
+As can be seen in the heatmap, there is a significant concentration of daily usage from 6a-9a and 4p-8p on weekdays, and 8a-7p on weekends.</br>
+Thursday and Friday show much more mid-day usage compared to the first three workdays in the week.</br>
+Using this data from an operational standpoint, bike maintenance/recharging/cleanup should take place when the fewest number of bikes are in service: from 1am-5am.</br>
+
+The geographic map shows the concentration of rides based on where they begin.</br>
+The locations that are the most red indicate the most popular locations for CitiBikes trips to be started.</br>
+Grand Central Station is where the deepest red marker is.</br>
+Public transportation stations and other high-foot-traffic areas such as parks are the perfect places to consider building stations in other cities.</br>
+
+Now that we know when and where CitiBike services are wanted the most, we will look into the type of people that use these services.</br>
+
+### Trip Times/Days by Gender
+
 ![2](https://user-images.githubusercontent.com/14188580/120111813-02405800-c139-11eb-8d8b-b8cc9394dc7a.PNG)
+
+The image above is the same heatmap seen before, but this one split by user gender.</br>
+Male and Female day/time usage follows a very similar pattern to what was described above.</br>
+Users with an 'unknown' gender in their profile provide a very different picture:
+* Usage is primarily on weekends only
+* Some additional noteworthy usage in the afternoons of Thursday and Friday
+
+What does this tell us about the majority of "Unknown" gender CitiBike users?
+
+![5](https://user-images.githubusercontent.com/14188580/120111823-07050c00-c139-11eb-956b-019c56f9ef81.PNG)
+
+Diving deeper into the same topic, the above image is showing the bike usage on each day of the week by gender and by usertype.</br>
+Usertype only has two different values: Subscriber and Customer.</br>
+A "Subscriber" is someone that has purchased an annual membership for the CitiBike service, whereas a "Customer" is someone that has purchased a 24-hour or 72-hour pass.</br>
+
+In the "Customer" row above, the heatmap for "Unknown" gender shows a noticeable similarity to the prior plot, while "Unknown" Subscribers make up too small of a population to be graphed.</br>
+From this we can determine that temporary "Customer" accounts:
+* Do not feel a need to input their gender when purchasing a pass.
+* Are not using CitiBikes to commute to/from work.
+
+### Bike Usage Duration
 
 ![3](https://user-images.githubusercontent.com/14188580/120111817-03718500-c139-11eb-9d04-2c789acd6927.PNG)
 
 ![4](https://user-images.githubusercontent.com/14188580/120111821-05d3df00-c139-11eb-9330-ad4d3a6000ad.PNG)
 
-![5](https://user-images.githubusercontent.com/14188580/120111823-07050c00-c139-11eb-956b-019c56f9ef81.PNG)
+### Start Locations by Gender
 
 ![6](https://user-images.githubusercontent.com/14188580/120111829-09fffc80-c139-11eb-8f42-92010e2f919e.PNG)
 
 ![6(1)](https://user-images.githubusercontent.com/14188580/120111832-0bc9c000-c139-11eb-9c0b-11229da5497b.PNG)
+
+### Usertype by Gender/Trip Duration by Gender/Usertype
 
 ![7](https://user-images.githubusercontent.com/14188580/120111835-0cfaed00-c139-11eb-83d0-d13e74486e92.PNG)
 
